@@ -1,0 +1,65 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Cleaning Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tempahan Room Cleaning</h1>
+    <form action="thank-you.html" method="POST">
+        <div class="form-group">
+            <label for="service">Choose Service:</label>
+            <select id="service" name="service" required>
+                <option value="cleaning-bed">Tidying Up The Bed</option>
+                <option value="vacuum-floor">Vacuum Floor</option>
+                <option value="dusting">Dustingk</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="room-number">Room Number:</label>
+            <input type="text" id="room-number" name="room-number" placeholder="Enter Your Room Number" required>
+        </div>
+        <div class="form-group">
+            <label for="notes">Additional Notes (Optional):</label>
+            <textarea id="notes" name="notes" placeholder="Let us know if you have any special requests"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
